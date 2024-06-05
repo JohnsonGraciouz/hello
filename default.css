@@ -1,0 +1,11 @@
+:root {
+    --main-font: "Lato", sans-serif;
+    --main-color: #000000;
+    --background-color: #ffffffa0;
+    --text-color: #ffffff;
+    --text-shadow-color: #000000;
+    --heading-background-color: #ff11a4;
+    --navigation-background-color: #49d4cf;
+    --navigation-text-color: #000000;
+    --navigation-hover-color: #bffbfd;
+  }

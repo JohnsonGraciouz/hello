@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+
+html {
+  font: 300 15px/1.8 var(--main-font);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+    padding-left: 20vw;  
+}
+
+h1 {
+  margin: 0;
+  color: var(--main-color);
+  background-color: var(--background-color);
+  top: 0;
+  left: 1rem;
+  padding-left: 2rem;
+  line-height: 2;
+  margin-top: 1px;
+  z-index: 1;
+  transition: all 300ms;
+}
+
+img {
+  width: 50vw;
+  padding-left: 9vw;
+}
+
+section {
+  height: 100vh;
+}
+
+#bounce {
+  width: 80vw;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  color: var(--text-color);
+  font-size: 5cqw;
+  text-shadow: 0 0 10px var(--text-shadow-color);
+  animation: bounce 1s infinite;
+}
+
+/* ANIMATIONS */
+
+.rise {
+    animation: rising 2s ease;
+  }
+  
+@keyframes rising {
+    from {
+      transform: translateY(20%);
+    }
+    to {
+      transform: translateY(0%);
+    }
+  }
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+p {
+  font-size: 3cqh;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.garden {
+  background-image: url("garden.jpg");
+  background-size: cover;
+  background-position-y: bottom;
+  background-attachment: fixed;
+}
+
+/* BRIANA */
+
+.Briana {
+    opacity: 0;
+    transform: translateX(-20%);
+    transition: all 2s ease-out;
+    height: 20vh;
+    margin-top: 80vh;
+    position: relative;
+    padding-left: 0;
+  }
+
+  .startCrawl {
+    opacity: 1;
+    transform: translateX(25%);
+  }
+  
+/* NAV BAR */
+
+.navigation {
+  background-color: var(--navigation-background-color);
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-size: 3cqw;
+  font-weight: 900;
+  position: fixed;
+  width: 20vw;
+}
+
+.navigation a {
+  padding: 1rem;
+  text-decoration: none;
+  color: var(--navigation-text-color);
+}
+
+.navigation a:hover {
+  color: var(--navigation-hover-color);
+  transition: all 500ms;
+}
+
+/* HEADING */
+
+.enabled {
+  color: var(--text-color);
+  background-color: var(--heading-background-color);
+  position: sticky;
+}
